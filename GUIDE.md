@@ -7,7 +7,7 @@
 
 /**D_1 C++/C输出Hello World/
 
-//算机输出“Hello world”基本上是一门语言入门的第一步，以下，我们来看看一些其他的语言如何实现：
+//计算机输出“Hello world”基本上是一门语言入门的第一步，以下，我们来看看一些其他的语言如何实现：
 //java
 public class HelloWorld {
 public static void main (String[ ] args) {
@@ -15,16 +15,23 @@ public static void main (String[ ] args) {
    }
 }
 //Python
-print”Hello World” //解释型语言，一行实现
+print”Hello World” //解释型语言
 //Racket
 displayln “Hello world” //笔者很喜欢的一门语言，推荐学习
 //相比之下，C和C++的输出实现可能相对繁琐，具体如下;
-//C++                                //C
-#include <iostream>                 #include <stdio.h>
-  using namespace std;                int main()
-  int main()                          {
-  {                                    printf("Hello World");
-  cout<<"Hello World"<<endl;           return 0;
-  return 0;                            }
-  }
+//C++                            
+#include <iostream>
+using namespace std;
+int main()
+ {
+  cout<<“Hello World”<<endl;
+  return 0;
+ }
+//C
+#include <stdio.h>
+int main()
+{
+printf(“Hello World\n”);
+return 0;
+}
   //对比之下，我们不难发现C与C++之间的异曲同工之处，在下一章中，我们将开始C++与C的正式学习--基本数据类型
